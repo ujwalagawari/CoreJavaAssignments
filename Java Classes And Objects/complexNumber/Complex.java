@@ -6,7 +6,7 @@ complex sum() to sum two complex numbers & return complex number
 1. Write the definitions for each of the above member functions.
 2. Write a ComplexTest class with main function to create three complex number objects. Set the value in two objects and call sum() to calculate sum and assign it in third object. Display all complex numbers.
  */
-package complexNumber;
+package assignment.complexnumber;
 
 /**
  * @author ugawari
@@ -41,11 +41,11 @@ public class Complex {
 	/**
 	 * To display Complex number in realPart and imaginaryPart format
 	 */
-	public void disp(){
+	public String disp(){
 		if(imaginaryPart>0)
-			System.out.println(realPart+"+"+imaginaryPart+"i");
+			return realPart+"+"+imaginaryPart+"i";
 		else
-			System.out.println(realPart+""+imaginaryPart+"i");
+			return realPart+""+imaginaryPart+"i";
 	}
 	
 	private float newRealPart; 		//not given access to outside so not created getter and setter

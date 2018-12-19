@@ -1,4 +1,4 @@
-package complexNumber;
+package assignment.complexnumber;
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -28,6 +28,9 @@ public class ComplexTest {
 		complex3=complex1.sum(complex2);
 		expectedResult="10.0,9.0";
 		assertEquals(expectedResult, complex3.getRealPart()+","+complex3.getImaginaryPart());
+		complex1.disp();
+		complex2.disp();
+		complex3.disp();
 	}
 	
 	@Test
@@ -37,6 +40,9 @@ public class ComplexTest {
 		complex3=complex1.sum(complex2);
 		expectedResult="10.0,6.2";
 		assertEquals(expectedResult, complex3.getRealPart()+","+complex3.getImaginaryPart());
+		complex1.disp();
+		complex2.disp();
+		complex3.disp();
 	}
 	
 	@Test
@@ -46,6 +52,9 @@ public class ComplexTest {
 		complex3=complex1.sum(complex2);
 		expectedResult="7.0,6.0";
 		assertEquals(expectedResult, complex3.getRealPart()+","+complex3.getImaginaryPart());
+		complex1.disp();
+		complex2.disp();
+		complex3.disp();
 	}
 	
 	@Test
@@ -55,6 +64,9 @@ public class ComplexTest {
 		complex3=complex1.sum(complex2);
 		expectedResult="0.0,9.0";
 		assertEquals(expectedResult, complex3.getRealPart()+","+complex3.getImaginaryPart());
+		complex1.disp();
+		complex2.disp();
+		complex3.disp();
 	}
 	
 	@Test
@@ -64,6 +76,9 @@ public class ComplexTest {
 		complex3=complex1.sum(complex2);
 		expectedResult="10.0,-2.8";
 		assertEquals(expectedResult, complex3.getRealPart()+","+complex3.getImaginaryPart());
+		complex1.disp();
+		complex2.disp();
+		complex3.disp();
 	}
 	
 	@Test
@@ -73,6 +88,9 @@ public class ComplexTest {
 		complex3=complex1.sum(complex2);
 		expectedResult="-7.0,-6.0";
 		assertEquals(expectedResult, complex3.getRealPart()+","+complex3.getImaginaryPart());
+		complex1.disp();
+		complex2.disp();
+		complex3.disp();
 	}
 	
 	@Test
@@ -82,13 +100,11 @@ public class ComplexTest {
 		complex3=complex1.sum(complex2);
 		expectedResult="0.0,0.0";
 		assertEquals(expectedResult, complex3.getRealPart()+","+complex3.getImaginaryPart());
-	}
-	
-	@After
-	public void tearDown(){
 		complex1.disp();
 		complex2.disp();
 		complex3.disp();
 	}
+	
+	
 
 }

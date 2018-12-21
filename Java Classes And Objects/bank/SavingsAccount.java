@@ -84,7 +84,7 @@ public class SavingsAccount {
 	
 	public SavingsAccount(String name) {
 		this.name = name;
-		//this.accountNumber = accountId;
+		this.balance = 0.0;
 	}
 
 	/**

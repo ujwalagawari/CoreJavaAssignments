@@ -26,13 +26,7 @@ public class TriangleTest {
 	}
 	
 	@Test
-	public void test() {
-		System.out.println("1 "+triangle1.checkTriangleType());
-		System.out.println("2 "+triangle2.checkTriangleType());
-		System.out.println("2 "+triangle3.checkTriangleType());
-		System.out.println("2 "+triangle4.checkTriangleType());
-		System.out.println("2 "+triangle5.checkTriangleType());
-	}
+	public void test() {}
 	
 	@Test
 	public void testForRightAngle() {
